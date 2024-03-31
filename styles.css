@@ -1,0 +1,164 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #212529;
+    color: #e9ecef;
+}
+
+.jumbotron {
+    background-image: url('https://source.unsplash.com/1600x900/?chess');
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Ajusta el tamaño de la sección encabezado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Agrega un gradiente semitransparente encima de la imagen */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?chess');
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card-price {
+    transition: transform 0.3s;
+}
+
+.card-price:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Cursos */
+#cursos {
+    background-color: #343a40;
+    padding: 60px 0;
+}
+
+#cursos h2 {
+    color: #e9ecef;
+}
+
+#cursos .nav-pills .nav-link {
+    color: #e9ecef;
+}
+
+#cursos .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+#cursos .tab-content h3 {
+    color: #e9ecef;
+}
+
+#cursos .tab-content i {
+    color: #6c757d;
+}
+
+#cursos .tab-content p {
+    color: #ced4da;
+}
+
+/* Nuevo: Estilos para las tarjetas de los cursos */
+.card-course {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #495057;
+}
+
+.card-course:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Enlaces */
+#enlaces {
+    padding: 60px 0;
+    background-color: #343a40;
+}
+
+#enlaces h2 {
+    color: #e9ecef;
+}
+
+/* Sección Testimonios */
+#testimonios {
+    padding: 60px 0;
+    background-color: #343a40;
+}
+
+#testimonios h2 {
+    color: #e9ecef;
+}
+
+#testimonios img {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 60px 0;
+    background-color: #212529;
+}
+
+#contacto h2 {
+    color: #e9ecef;
+}
+
+#contacto form .form-control {
+    border-radius: 0;
+    border-color: #ced4da;
+    background-color: #495057;
+    color: #e9ecef;
+}
+
+#contacto form .form-control:focus {
+    border-color: #6c757d;
+}
+
+#contacto form .btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#contacto form .btn-primary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Sección Precios */
+#precios {
+    padding: 60px 0;
+    background-color: #343a40;
+}
+
+#precios h2 {
+    color: #e9ecef;
+}
+
+#precios .card-price {
+    background-color: #495057;
+    border: none;
+}
+
+#precios .card-price i {
+    color: #6c757d;
+}
+
+#precios .card-price h4 {
+    color: #e9ecef;
+}
+
+#precios .card-price h5 {
+    color: #6c757d;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    color: #e9ecef;
+}
