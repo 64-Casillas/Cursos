@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos de Ajedrez</title>
+    <title>64 Casillas - FIDE INSTRUCTOR Jose Miguel Echeverri</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -12,223 +12,431 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#">Cursos de Ajedrez</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cursos">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#precios">Precios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#enlaces">Torneos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonios">Testimonios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Encabezado -->
-    <header class="jumbotron jumbotron-fluid text-center d-flex align-items-center animate__animated animate__fadeInDown">
-        <div class="container">
-            <h1 class="display-4 text-white">Cursos de Ajedrez</h1>
-            <p class="lead text-white">Aprende ajedrez con nuestros cursos especializados</p>
-            <a href="#cursos" class="btn btn-light btn-lg">Ver Cursos</a>
-        </div>
-    </header>
-
-    <!-- Sección Cursos -->
-<section id="cursos" class="container mt-5">
-    <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Nuestros Cursos</h2>
-    <div class="row">
-        <!-- Tab de Cursos -->
-        <div class="col-md-3">
-            <ul class="nav flex-column nav-pills">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="favicon.png" alt="Logo" width="30" height="30" class="d-inline-block align-top mr-2">
+            64 Casillas - FI Jose Miguel Echeverri
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="pill" href="#curso1">Curso 1</a>
+                    <a class="nav-link" href="#cursos"><i class="fas fa-graduation-cap mr-2"></i>Cursos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#curso2">Curso 2</a>
+                    <a class="nav-link" href="#precios"><i class="fas fa-dollar-sign mr-2"></i>Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#enlaces"><i class="fas fa-chess mr-2"></i>Torneos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonios"><i class="fas fa-comments mr-2"></i>Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto"><i class="fas fa-envelope mr-2"></i>Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="requisitos.html"><i class="fas fa-info-circle mr-2"></i>Requisitos</a>
                 </li>
             </ul>
         </div>
-        <!-- Contenido de los Cursos -->
-        <div class="col-md-9">
+    </div>
+</nav>
+
+<header class="jumbotron jumbotron-fluid d-flex align-items-center animate__animated animate__fadeInDown" style="padding-top: 5rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-4 text-white">Entrenamiento personalizado en ajedrez con Jose Miguel Echeverri</h1>
+                <p class="lead text-white">Como FIDE Instructor, te guiaré en cursos adaptados a tus necesidades para mejorar tu juego a tu ritmo y alcanzar tu máximo potencial en el ajedrez.</p>
+                <a href="#cursos" class="btn btn-light btn-lg">Explora nuestros cursos</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="image-container">
+                    <img src="img/foto1.jpg" alt="Imagen de Jose Miguel Echeverri" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section id="cursos" class="container mt-5 mx-auto p-4">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Nuestros Cursos</h2>
+        <div class="row">
+          <!-- Tab de Cursos -->
+          <div class="col-md-3 col-12">
+            <ul class="nav flex-column nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#curso-ajedrez-basico">
+                  <i class="fas fa-chess-pawn mr-2"></i> Ajedrez Básico
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#curso-ajedrez-intermedio">
+                  <i class="fas fa-chess-knight mr-2"></i> Ajedrez Intermedio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#curso-ajedrez-avanzado">
+                  <i class="fas fa-chess-rook mr-2"></i> Ajedrez Avanzado
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#curso-ajedrez-maestros">
+                  <i class="fas fa-chess-king mr-2"></i> Ajedrez para Maestros
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contenido de los Cursos -->
+          <div class="col-md-9 col-12">
             <div class="tab-content">
-                <div id="curso1" class="tab-pane fade show active">
-                    <div class="row">
-                        <div class="col-md-4 text-center mb-4">
-                            <div class="card card-course">
-                                <div class="card-body">
-                                    <i class="fas fa-user-graduate fa-3x"></i>
-                                    <h5 class="card-title">Dirigido a:</h5>
-                                    <p class="card-text">Principiantes y jugadores intermedios que deseen mejorar sus habilidades en el ajedrez.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center mb-4">
-                            <div class="card card-course">
-                                <div class="card-body">
-                                    <i class="fas fa-list-alt fa-3x"></i>
-                                    <h5 class="card-title">Temario:</h5>
-                                    <p class="card-text">Aperturas, tácticas, estrategias, finales y partidas comentadas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center mb-4">
-                            <div class="card card-course">
-                                <div class="card-body">
-                                    <i class="fas fa-users fa-3x"></i>
-                                    <h5 class="card-title">Cupos:</h5>
-                                    <p class="card-text">20 alumnos por curso.</p>
-                                </div>
-                            </div>
-                        </div>
+              <div id="curso-ajedrez-basico" class="tab-pane fade show active">
+                <div class="row">
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <h5 class="card-title">Dirigido a:</h5>
+                        <p class="card-text">Principiantes que deseen aprender las bases del ajedrez.</p>
+                      </div>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3">Más información</a>
-                </div>
-                <div id="curso2" class="tab-pane fade">
-                    <div class="row">
-                        <div class="col-md-4 text-center mb-4">
-                            <div class="card card-course">
-                                <div class="card-body">
-                                    <i class="fas fa-user-graduate fa-3x"></i>
-                                    <h5 class="card-title">Dirigido a:</h5>
-                                    <p class="card-text">Jugadores intermedios y avanzados que busquen perfeccionar sus habilidades en el ajedrez.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center mb-4">
-                            <div class="card card-course">
-                                <div class="card-body">
-                                    <i class="fas fa-list-alt fa-3x"></i>
-                                    <h5 class="card-title">Temario:</h5>
-                                    <p class="card-text">Análisis de partidas, tácticas avanzadas, estrategias de nivel superior y finales complejos.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center mb-4">
-                            <div class="card card-course">
-                                <div class="card-body">
-                                    <i class="fas fa-users fa-3x"></i>
-                                    <h5 class="card-title">Cupos:</h5>
-                                    <p class="card-text">15 alumnos por curso.</p>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-list-alt fa-3x"></i>
+                        <h5 class="card-title">Temario:</h5>
+                        <p class="card-text">Movimientos de las piezas, aperturas básicas, tácticas elementales y finales sencillos.</p>
+                      </div>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3">Más información</a>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h5 class="card-title">Cupos:</h5>
+                        <p class="card-text">20 alumnos por curso.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="row mt-4">
+                  <div class="col text-center">
+                    <a href="#" class="btn btn-primary mr-2">Inscribirse</a>
+                    <a href="https://wa.me/message/YOUR_PHONE_NUMBER" target="_blank" class="btn btn-success mr-2">Resolver dudas en WhatsApp</a>
+                    <a href="#" class="btn btn-secondary">Requisitos</a>
+                  </div>
+                </div>
+              </div>
+              <div id="curso-ajedrez-intermedio" class="tab-pane fade">
+                <div class="row">
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <h5 class="card-title">Dirigido a:</h5>
+                        <p class="card-text">Jugadores intermedios que deseen profundizar en estrategias y tácticas avanzadas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-list-alt fa-3x"></i>
+                        <h5 class="card-title">Temario:</h5>
+                        <p class="card-text">Análisis de partidas, tácticas avanzadas, estrategias de nivel superior y finales complejos.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h5 class="card-title">Cupos:</h5>
+                        <p class="card-text">15 alumnos por curso.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col text-center">
+                    <a href="#" class="btn btn-primary mr-2">Inscribirse</a>
+                    <a href="https://wa.me/message/YOUR_PHONE_NUMBER" target="_blank" class="btn btn-success mr-2">Resolver dudas en WhatsApp</a>
+                    <a href="#" class="btn btn-secondary">Requisitos</a>
+                  </div>
+                </div>
+              </div>
+              <div id="curso-ajedrez-avanzado" class="tab-pane fade">
+                <div class="row">
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <h5 class="card-title">Dirigido a:</h5>
+                        <p class="card-text">Jugadores avanzados que buscan perfeccionar sus habilidades y prepararse para torneos.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-list-alt fa-3x"></i>
+                        <h5 class="card-title">Temario:</h5>
+                        <p class="card-text">Preparación mental, análisis de partidas de elite, tácticas y estrategias de vanguardia, y entrenamiento personalizado.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h5 class="card-title">Cupos:</h5>
+                        <p class="card-text">10 alumnos por curso.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col text-center">
+                    <a href="#" class="btn btn-primary mr-2">Inscribirse</a>
+                    <a href="https://wa.me/message/YOUR_PHONE_NUMBER" target="_blank" class="btn btn-success mr-2">Resolver dudas en WhatsApp</a>
+                    <a href="#" class="btn btn-secondary">Requisitos</a>
+                  </div>
+                </div>
+              </div>
+              <div id="curso-ajedrez-maestros" class="tab-pane fade">
+                <div class="row">
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <h5 class="card-title">Dirigido a:</h5>
+                        <p class="card-text">Maestros de ajedrez que deseen perfeccionar sus habilidades y competir a nivel internacional.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-list-alt fa-3x"></i>
+                        <h5 class="card-title">Temario:</h5>
+                        <p class="card-text">Análisis avanzado de partidas, preparación para torneos internacionales, estrategias de élite y entrenamiento personalizado.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center mb-4">
+                    <div class="card card-course">
+                      <div class="card-body">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h5 class="card-title">Cupos:</h5>
+                        <p class="card-text">5 alumnos por curso.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col text-center">
+                    <a href="#" class="btn btn-primary mr-2">Inscribirse</a>
+                    <a href="https://wa.me/message/YOUR_PHONE_NUMBER" target="_blank" class="btn btn-success mr-2">Resolver dudas en WhatsApp</a>
+                    <a href="#" class="btn btn-secondary">Requisitos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios" class="container mt-5 p-4 animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-4 text-white">Testimonios</h2>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez me ayudó a mejorar mi nivel de juego y a entender mejor las estrategias. Lo recomiendo ampliamente."</p>
+              <h5 class="text-primary">Juan Pérez</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait1" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"Estoy muy contento con el curso de ajedrez. Aprendí mucho y pude aplicar lo aprendido en mis partidas. ¡Gracias!"</p>
+              <h5 class="text-primary">María López</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait2" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez es excelente. El profesor es muy claro y paciente. Aprendí muchas tácticas y estrategias que me han ayudado a mejorar mi juego."</p>
+              <h5 class="text-primary">Pedro Rodríguez</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait3" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez me encantó. Aprendí mucho sobre aperturas, tácticas y estrategias. Lo recomiendo a todos los amantes del ajedrez."</p>
+              <h5 class="text-primary">Ana Gómez</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait4" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez es muy completo. Aprendí desde lo básico hasta tácticas avanzadas. El profesor es muy bueno explicando y resolviendo dudas."</p>
+              <h5 class="text-primary">Carlos Martínez</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait5" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez me ayudó a mejorar mi nivel de juego y a entender mejor las estrategias. Lo recomiendo ampliamente."</p>
+              <h5 class="text-primary">Laura Sánchez</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait6" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez es excelente. El profesor es muy claro y paciente. Aprendí muchas tácticas y estrategias que me han ayudado a mejorar mi juego."</p>
+              <h5 class="text-primary">Andrés González</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait7" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez me encantó. Aprendí mucho sobre aperturas, tácticas y estrategias. Lo recomiendo a todos los amantes del ajedrez."</p>
+              <h5 class="text-primary">Sofía Hernández</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait8" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <div class="testimonio p-4 bg-dark rounded">
+              <i class="fas fa-quote-left fa-2x mb-3 text-primary"></i>
+              <p class="text-white">"El curso de ajedrez es muy completo. Aprendí desde lo básico hasta tácticas avanzadas. El profesor es muy bueno explicando y resolviendo dudas."</p>
+              <h5 class="text-primary">David Torres</h5>
+              <img src="https://source.unsplash.com/100x100/?portrait9" alt="Foto de usuario" class="rounded-circle img-fluid mt-3">
+            </div>
+            <!-- Agrega más testimonios aquí -->
+          </div>
+        </div>
+      </section>
+      
+      <section id="precios" class="container mt-5 mx-auto p-4 animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-4">Precios</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 text-center mb-4">
+            <div class="card card-price p-3">
+              <i class="fas fa-user fa-3x"></i>
+              <h4 class="mt-3">Clase Personalizada</h4>
+              <p>Disfruta de una clase adaptada a tus necesidades</p>
+              <h5 class="text-price">45.000 COP / 12 USD</h5>
+              <a href="#" class="btn btn-primary mt-3">Contratar</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mb-4">
+            <div class="card card-price p-3">
+              <i class="fas fa-users fa-3x"></i>
+              <h4 class="mt-3">Clase Masterclass Grupal</h4>
+              <p>Aprende de los mejores en nuestras masterclass grupales con jugadores de todo el mundo.</p>
+              <small>Nota: Las masterclass tienen un máximo de 6 participantes por temas educativos.</small>
+              <h5 class="text-price">30.000 COP / 8 USD</h5>
+              <a href="#" class="btn btn-primary mt-3">Contratar</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mb-4">
+            <div class="card card-price p-3">
+              <i class="fas fa-chess-board fa-3x"></i>
+              <h4 class="mt-3">1 Curso (5 Clases)</h4>
+              <p>Sumérgete en el mundo del ajedrez con cualquiera de nuestros cursos de 5 clases.</p>
+              <small>Nota: Los cursos tienen un máximo de 6 participantes por temas educativos.</small>
+              <h5 class="text-price">140.000 COP / 38 USD</h5>
+              <a href="#" class="btn btn-primary mt-3">Comprar</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center mb-4">
+            <div class="card card-price p-3">
+              <i class="fas fa-gift fa-3x"></i>
+              <h4 class="mt-3">Paquete de 10 Clases Personalizadas</h4>
+              <p>Obtén un descuento especial al contratar 10 clases personalizadas a tu medida.</p>
+              <h5 class="text-price">110 USD</h5>
+              <a href="#" class="btn btn-primary mt-3">Contratar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="enlaces" class="container mt-5 mx-auto p-4 animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-4">Torneos Semanales</h2>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-auto text-center mb-4 mb-md-0">
+            <img src="https://lichess.org/favicon.ico" alt="Logo de Lichess" width="100" height="100" class="mb-3">
+          </div>
+          <div class="col-md px-5 mb-4 mb-md-0">
+            <div class="text-container">
+              <p>Únete a nuestro equipo de Lichess y participa en los torneos semanales cada sábado a las 9:00am. El jugador que más puntos acumule durante el mes recibirá acceso gratis a un curso de 5 clases el siguiente mes.</p>
+            </div>
+          </div>
+          <div class="col-md-auto text-center mb-4 mb-md-0">
+            <a href="#" class="btn btn-primary btn-block mb-3">Únete al equipo de Lichess</a>
+            <a href="#" class="btn btn-success btn-block">Entrar al torneo semanal</a>
+          </div>
+        </div>
+      </section>
+      
+      
+    
+      
+<!-- Sección Logos -->
+<section id="logos" class="container mt-5 animate__animated animate__fadeInUp">
+    <h2 class="text-center mb-4">Empresas con las que he colaborado</h2>
+    <div class="logo-container">
+        <div class="row logo-carousel">
+            <div class="col-md-2 text-center mb-4">
+                <img src="img/logo-liga.png" alt="Logo de empresa" class="img-fluid logo-img">
+            </div>
+            <div class="col-md-2 text-center mb-4">
+                <img src="img/logo-indeportes.png" alt="Logo de empresa" class="img-fluid logo-img">
+            </div>
+            <div class="col-md-2 text-center mb-4">
+                <img src="img/logo-fecodaz.png" alt="Logo de empresa" class="img-fluid logo-img">
+            </div>
+            <div class="col-md-2 text-center mb-4">
+                <img src="img/logo-imder.png" alt="Logo de empresa" class="img-fluid logo-img">
+            </div>
+            <div class="col-md-2 text-center mb-4">
+                <img src="img/logo-cuam.png" alt="Logo de empresa" class="img-fluid logo-img">
+            </div>
+            <div class="col-md-2 text-center mb-4">
+                <img src="img/logo-comfama.png" alt="Logo de empresa" class="img-fluid logo-img">
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Sección Precios -->
-    <section id="precios" class="container mt-5 animate__animated animate__fadeInUp">
-        <h2 class="text-center mb-4">Precios</h2>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <div class="card card-price p-3">
-                    <i class="fas fa-user fa-3x"></i>
-                    <h4 class="mt-3">Clase Personalizada</h4>
-                    <h5 class="text-primary">Precio</h5>
-                    <a href="#" class="btn btn-primary mt-3">Más información</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <div class="card card-price p-3">
-                    <i class="fas fa-users fa-3x"></i>
-                    <h4 class="mt-3">Clase Masterclass Grupal</h4>
-                    <h5 class="text-primary">Precio</h5>
-                    <a href="#" class="btn btn-primary mt-3">Más información</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <div class="card card-price p-3">
-                    <i class="fas fa-chess-board fa-3x"></i>
-                    <h4 class="mt-3">1 Curso (5 Clases)</h4>
-                    <h5 class="text-primary">Precio</h5>
-                    <a href="#" class="btn btn-primary mt-3">Más información</a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <div class="card card-price p-3">
-                    <i class="fas fa-chess-board fa-3x"></i>
-                    <h4 class="mt-3">2 Cursos (10 Clases)</h4>
-                    <h5 class="text-primary">Precio</h5>
-                    <a href="#" class="btn btn-primary mt-3">Más información</a>
-                </div>
+<!-- Sección Contacto -->
+<section id="contacto" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-5">
+                <h2 class="section-title">Reserva tu clase de ajedrez personalizada</h2>
+                <p class="section-description">Selecciona una fecha y hora en el calendario para reservar tu clase de ajedrez personalizada con el instructor FIDE Jose Miguel Echeverri.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Sección Enlaces -->
-    <section id="enlaces" class="container mt-5 animate__animated animate__fadeInUp">
-        <h2 class="text-center mb-4">Torneos Semanales</h2>
-        <div class="row">
-            <div class="col-md-4 text-center mb-4">
-                <a href="#" class="btn btn-primary btn-block">Equipo de Lichess</a>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <!-- Principio del widget integrado de Calendly -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/jmecheverrig-clasesdeajedrez/clase-personalizada-ajedrez" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Final del widget integrado de Calendly -->
             </div>
-            <!-- Agrega más enlaces si es necesario -->
         </div>
-    </section>
-
-    <!-- Sección Testimonios -->
-    <section id="testimonios" class="container mt-5 animate__animated animate__fadeInUp">
-        <h2 class="text-center mb-4">Testimonios</h2>
-        <div class="row">
-            <div class="col-md-4 text-center mb-4">
-                <img src="https://source.unsplash.com/100x100/?portrait" alt="Foto de usuario" class="rounded-circle img-fluid mb-3">
-                <h5>Nombre Apellido</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-            </div>
-            <!-- Agrega más testimonios si es necesario -->
-        </div>
-    </section>
-
-    <!-- Sección Contacto -->
-    <section id="contacto" class="container mt-5 animate__animated animate__fadeInUp">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <form>
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-primary py-3">
         <div class="container text-center text-white">
-            <p class="m-0">&copy; 2023 Cursos de Ajedrez. Todos los derechos reservados.</p>
+            <p class="m-0">&copy; 2023 64 Casillas - FIDE INSTRUCTOR Jose Miguel Echeverri. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Librerías JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 </body>
