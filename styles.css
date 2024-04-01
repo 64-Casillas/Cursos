@@ -36,7 +36,6 @@ body {
     display: block; /* Asegura que la imagen se muestre como un bloque */
 }
 
-
 .navbar-brand {
     font-weight: bold;
 }
@@ -131,7 +130,7 @@ body {
 
 #enlaces h2 {
     color: #e9ecef;
-}  
+}
 
 /* Estilos para la sección de contacto */
 #contacto {
@@ -155,59 +154,98 @@ body {
     padding: 60px 0;
     background-color: #343A40;
   }
-  
+
   #precios h2 {
     color: #e9ecef;
   }
-  
+
   #precios .card-price {
     background-color: #fff;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
   #precios .card-price i {
     color: #6c757d;
   }
-  
+
   #precios .card-price h4 {
     color: #343a40;
   }
-  
+
   #precios .card-price p {
     color: #6c757d;
   }
-  
+
   #precios .card-price small {
     color: #000000;
   }
-  
+
   #precios .card-price h5 {
     color: #f0ad4e;
   }
-  
+
   #precios .card-price .btn-primary {
     background-color: #f0ad4e;
     border-color: #f0ad4e;
   }
-  
+
   #precios .card-price .btn-primary:hover {
     background-color: #d99b47;
     border-color: #d99b47;
   }
-  
+
+  /* Añade media queries para mejorar el diseño responsivo */
   @media (max-width: 768px) {
-    #precios .col-md-6 {
-      flex: 0 0 calc(50% - 20px); /* Asegura que cada columna ocupe la mitad del ancho del contenedor menos el margen */
-      max-width: calc(50% - 20px); /* Asegura que cada columna ocupe la mitad del ancho del contenedor menos el margen */
+    /* Ajusta el tamaño de las fuentes en pantallas pequeñas */
+    .jumbotron h1 {
+      font-size: 2rem;
     }
-  }
-  
-  @media (max-width: 576px) {
-    #precios .col-md-6 {
-      flex: 0 0 100%; /* Asegura que cada columna ocupe el ancho completo del contenedor */
-      max-width: 100%; /* Asegura que cada columna ocupe el ancho completo del contenedor */
+
+    .jumbotron p {
+      font-size: 1rem;
+    }
+
+    /* Ajusta el ancho de los elementos en pantallas pequeñas */
+    .image-container {
+      max-width: 100%;
+    }
+
+    .logo-img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    /* Ajusta el tamaño de los botones en pantallas pequeñas */
+    .btn-primary {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .btn-success {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .btn-secondary {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    /* Ajusta el tamaño de las tarjetas en pantallas pequeñas */
+    .card-course {
+      max-width: 100%;
+    }
+
+    /* Ajusta el tamaño de los testimonios en pantallas pequeñas */
+    .testimonio {
+      max-width: 100%;
+    }
+
+    /* Ajusta el tamaño de los precios en pantallas pequeñas */
+    .card-price {
+      max-width: 100%;
     }
   }
 
@@ -280,19 +318,19 @@ footer p {
 
 /* Cambiar el tamaño del texto en el encabezado */
 .jumbotron h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .jumbotron p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .text-container {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-  }
-  
+}
+
 /* Sección Testimonios */
 #testimonios {
     padding: 60px 0;
@@ -308,53 +346,89 @@ footer p {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* Añade un ancho máximo para que los testimonios no se expandan demasiado */
-    margin: 0 auto; /* Centra los testimonios horizontalmente */
+    max-width: 300px;
+    margin: 0 auto;
   }
   
   #testimonios .testimonio i {
-    color: #6c757d;
+    color: #f0ad4e; /* Cambia el color del símbolo de comillas a amarillo */
   }
   
   #testimonios .testimonio p {
     color: #ced4da;
-    font-size: 16px; /* Reduce el tamaño de la fuente para que quepa más texto */
+    font-size: 16px;
   }
   
   #testimonios .testimonio h5 {
-    color: #e9ecef;
-    font-size: 18px; /* Reduce el tamaño de la fuente para que quepa más texto */
+    color: #f0ad4e !important;
+    font-size: 18px;
   }
   
   #testimonios .testimonio img {
     border: 2px solid #6c757d;
-    width: 80px; /* Reduce el tamaño de la imagen para que quepa más contenido */
-    height: 80px; /* Reduce el tamaño de la imagen para que quepa más contenido */
+    width: 80px;
+    height: 80px;
   }
   
-  /* Añade estilos para el slider */
-  .slider {
-    max-width: 900px; /* Añade un ancho máximo para que el slider no se expanda demasiado */
-    margin: 0 auto; /* Centra el slider horizontalmente */
-    overflow: hidden; /* Oculta los elementos que se desbordan del contenedor */
+  /* Estilos para el carrusel personalizado */
+  #testimonios .slider {
+    position: relative;
+    overflow: hidden;
   }
   
-  .slider-track {
+  #testimonios .testimonios-wrapper {
     display: flex;
-    animation: scroll 30s infinite; /* Anima el desplazamiento del slider */
+    flex-wrap: nowrap;
+    transition: transform 0.6s ease-in-out;
   }
   
-  .testimonio {
-    flex: 0 0 33.333%; /* Asegura que cada testimonio ocupe un tercio del ancho del contenedor */
-    max-width: 33.333%; /* Asegura que cada testimonio ocupe un tercio del ancho del contenedor */
+  #testimonios .testimonios-wrapper .testimonio {
+    flex-shrink: 0;
+    width: 100%;
   }
   
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
+  #testimonios .btn-prev,
+  #testimonios .btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #e9ecef;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  #testimonios .btn-prev {
+    left: 0;
+  }
+  
+  #testimonios .btn-next {
+    right: 0;
+  }
+  
+  /* Muestra tres testimonios en pantallas más grandes */
+  @media (min-width: 992px) {
+    #testimonios .testimonios-wrapper .testimonio {
+      width: calc(33.333% - 20px);
+      margin: 0 10px;
     }
-    100% {
-      transform: translateX(-100%);
-    }
   }
   
+/* Ajustes para mejorar la responsividad */
+@media (max-width: 576px) {
+  .jumbotron {
+    height: auto;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .text-container {
+    padding: 20px 0;
+  }
+}
