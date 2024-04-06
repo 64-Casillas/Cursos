@@ -455,26 +455,46 @@ footer p {
   }
 }
 
-
 #instructor {
-  background-color: #343a40;
-  padding: 60px 0;
+  background-color: #f8f9fa;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-top: 5rem; /* Ajusta el valor según tus necesidades */
+}
+
+#instructor .container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+
+.instructor-container {
+  background-color: #fff;
+  border-radius: 10px; /* Ajusta el valor según tus necesidades */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); /* Ajusta los valores según tus necesidades */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #instructor .section-title {
-  color: #e9ecef;
+  color: #343a40;
   margin-bottom: 30px;
 }
 
 #instructor .intro {
-  color: #ced4da;
+  color: #6c757d;
   margin-bottom: 30px;
 }
 
 #instructor .info-box {
-  background-color: #495057;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border-radius: 10px; /* Ajusta el valor según tus necesidades */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); /* Ajusta los valores según tus necesidades */
   margin-bottom: 30px;
   padding: 20px;
   width: 100%;
@@ -487,27 +507,27 @@ footer p {
 }
 
 #instructor .info-box h4 {
-  color: #e9ecef;
+  color: #343a40;
   margin-bottom: 10px;
 }
 
 #instructor .info-box p {
-  color: #ced4da;
+  color: #6c757d;
 }
 
 #instructor .testimonials {
-  color: #ced4da;
+  color: #6c757d;
   margin-bottom: 30px;
 }
 
 #instructor .testimonials strong {
-  color: #e9ecef;
+  color: #343a40;
 }
 
 #instructor .btn-primary {
   background-color: #f0ad4e;
   border-color: #f0ad4e;
-  color: #343a40;
+  color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
 }
@@ -549,6 +569,17 @@ footer p {
 
 .info-box:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .col-md-8 {
+    text-align: left;
+  }
+
+  .info-box,
+  .testimonials {
+    width: 100%;
+  }
 }
 
 

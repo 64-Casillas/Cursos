@@ -68,34 +68,33 @@
   </header>
   
 <section id="cursos" class="container mt-5 mx-auto p-4">
-    <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Nuestros Cursos</h2>
+    <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Proximos Cursos</h2>
     <div class="row">
       <!-- Tab de Cursos -->
       <div class="col-md-3 col-12">
         <ul class="nav flex-column nav-pills">
           <li class="nav-item">
             <a class="nav-link active" data-toggle="pill" href="#curso-ajedrez-basico">
-              <i class="fas fa-chess-pawn mr-2"></i> Repertorio de Ataque con 1.e4
+              <i class="fas fa-chess-pawn mr-2"></i> Repertorio de Ataque con 1.e4 - 
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="pill" href="#curso-ajedrez-intermedio">
-              <i class="fas fa-chess-knight mr-2"></i> Ajedrez Intermedio
+              <i class="fas fa-chess-knight mr-2"></i> Repertorio Posicional con 1.d4 - 
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="pill" href="#curso-ajedrez-avanzado">
-              <i class="fas fa-chess-rook mr-2"></i> Ajedrez Avanzado
+              <i class="fas fa-chess-rook mr-2"></i> Planes Tipicos en el Medio Juego
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="pill" href="#curso-ajedrez-maestros">
-              <i class="fas fa-chess-king mr-2"></i> Ajedrez para Maestros
+              <i class="fas fa-chess-king mr-2"></i> Planes para jugar correctamente el final
             </a>
           </li>
         </ul>
       </div>
-      <!-- Contenido de los Cursos -->
       <!-- Contenido de los Cursos -->
 <div class="col-md-9 col-12">
   <div class="tab-content">
@@ -119,41 +118,95 @@
           </div>
         </div>
         <div class="card-container text-center mb-4">
-          <div class="card card-course">
+          <div class="card card-course bg-dark text-white">
             <div class="card-body">
               <i class="fas fa-list-alt fa-3x"></i>
               <h5 class="card-title">Temario:</h5>
-              <table class="table table-sm table-dark table-bordered temario-table" style="text-align: left; border-width: 2px; border-collapse: separate; border-spacing: 0 10px;">
-                <colgroup>
-                  <col style="width: 15%;">
-                  <col style="width: 85%;">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row"><strong>Clase 1:</strong></th>
-                    <td style="font-size: 18px; line-height: 1.5;"><strong>Desata tu creatividad con el Peón Rey</strong><br>Descubre cómo utilizar estratégicamente el peón del rey para mejorar tu creatividad y pensamiento crítico en diversas tácticas y posiciones.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><strong>Clase 2:</strong></th>
-                    <td style="font-size: 18px; line-height: 1.5;"><strong>Domina el Doble Peón de Rey</strong><br>Aprende a manejar y sacar ventaja de las posiciones con doble peón de rey, aprovechando al máximo tu posición con variadas estrategias y tácticas.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><strong>Clase 3:</strong></th>
-                    <td style="font-size: 18px; line-height: 1.5;"><strong>Supera la Defensa Caro-Kann y Francesa</strong><br>Adéntrate en las sutilezas de estas defensas y mejora tu juego con valiosas ideas y estrategias para contrarrestarlas con éxito.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><strong>Clase 4:</strong></th>
-                    <td style="font-size: 18px; line-height: 1.5;"><strong>Afronta con confianza la Defensa Siciliana</strong><br>Explora las diferentes variantes de la Defensa Siciliana y aprende a enfrentarlas con seguridad gracias a un análisis detallado y estrategias efectivas.</td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><strong>Clase 5:</strong></th>
-                    <td style="font-size: 18px; line-height: 1.5;"><strong>Contrarresta la Defensa Escandinava, Petrov y Alekhine</strong><br>Prepárate para afrontar estas defensas con una comprensión profunda y las herramientas necesarias para desafiarlas con éxito.</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div id="accordion" class="accordion w-100">
+                <!-- Clase 1 -->
+                <div class="card mb-2 bg-secondary">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <strong>Clase 1:</strong> Desata tu creatividad con el Peón Rey
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse w-100" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body bg-dark text-white" style="font-size: 18px; line-height: 1.5;">
+                      Descubre cómo utilizar estratégicamente el peón del rey para mejorar tu creatividad y pensamiento crítico en diversas tácticas y posiciones.
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Clase 2 -->
+                <div class="card mb-2 bg-secondary">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>Clase 2:</strong> Domina el Doble Peón de Rey
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse w-100" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body bg-dark text-white" style="font-size: 18px; line-height: 1.5;">
+                      Aprende a manejar y sacar ventaja de las posiciones con doble peón de rey, aprovechando al máximo tu posición con variadas estrategias y tácticas.
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Clase 3 -->
+                <div class="card mb-2 bg-secondary">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Clase 3:</strong> Supera la Defensa Caro-Kann y Francesa
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse w-100" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body bg-dark text-white" style="font-size: 18px; line-height: 1.5;">
+                      Adéntrate en las sutilezas de estas defensas y mejora tu juego con valiosas ideas y estrategias para contrarrestarlas con éxito.
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Clase 4 -->
+                <div class="card mb-2 bg-secondary">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>Clase 4:</strong> Afronta con confianza la Defensa Siciliana
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse w-100" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body bg-dark text-white" style="font-size: 18px; line-height: 1.5;">
+                      Explora las diferentes variantes de la Defensa Siciliana y aprende a enfrentarlas con seguridad gracias a un análisis detallado y estrategias efectivas.
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Clase 5 -->
+                <div class="card mb-2 bg-secondary">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <strong>Clase 5:</strong> Contrarresta la Defensa Escandinava, Petrov y Alekhine
+                    </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse w-100" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body bg-dark text-white" style="font-size: 18px; line-height: 1.5;">
+                      Prepárate para afrontar estas defensas con una comprensión profunda y las herramientas necesarias para desafiarlas con éxito.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>        
+        </div>
+                
         <div class="card-container text-center mb-4">
           <div class="card card-course">
             <div class="card-body">
@@ -187,10 +240,29 @@
             <tbody>
               <tr>
                 <td>Clase 1</td>
-                <td>2023-03-01</td>
+                <td>2023-04-20</td>
                 <td>18:00 - 20:00</td>
               </tr>
-              <!-- Agrega más filas para otras clases -->
+              <tr>
+                <td>Clase 2</td>
+                <td>2023-04-22</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 3</td>
+                <td>2023-04-27</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 4</td>
+                <td>2023-04-29</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 5</td>
+                <td>2023-05-04</td>
+                <td>18:00 - 20:00</td>
+              </tr>
             </tbody>
           </table>
           <div class="d-flex justify-content-center mt-3">
@@ -204,17 +276,64 @@
       <div class="row">
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-user-graduate fa-3x"></i>
+              <h5 class="card-title">Dirigido a:</h5>
+              <p class="card-text">Jugadores con un nivel intermedio, con un mínimo de <strong>1400 Elo en Chess.com <img src="img/logo-chess.png" alt="Chess.com" width="15" height="20"></strong> o <strong>1500 Elo Lichess.org <img src="img/logo-lichess.png" alt="Lichess" width="30" height="30"></strong>.</p>
+              <a href="https://docs.google.com/forms/d/your_form_link" target="_blank">
+                <button type="button" class="btn btn-primary">Diligenciar Formulario</button>
+              </a>
+              <br>
+              <br>
+              <a href="https://wa.me/your_whatsapp_number" target="_blank">
+                <button type="button" class="btn btn-success">Enviar Resultados por WhatsApp</button>
+              </a>
+            </div>
           </div>
         </div>
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-list-alt fa-3x"></i>
+              <h5 class="card-title">Temario:</h5>
+              <table class="table table-sm table-dark table-bordered temario-table" style="text-align: left; border-width: 2px; border-collapse: separate; border-spacing: 0 10px;">
+                <colgroup>
+                  <col style="width: 15%;">
+                  <col style="width: 85%;">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row"><strong>Clase 1:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende la Defensa Semi-Eslava</strong><br>Domina las sutilezas de la Defensa Semi-Eslava y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 2:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Domina la Apertura Inglesa</strong><br>Aprende a jugar la Apertura Inglesa con confianza y aprovecha al máximo tu posición con variadas estrategias y tácticas.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 3:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Mejora tu juego en el medio juego</strong><br>Explora las diferentes estrategias y tácticas en el medio juego para mejorar tu juego y tomar mejores decisiones.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 4:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende a jugar finales de peones</strong><br>Aprende a jugar finales de peones con confianza y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 5:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende a jugar finales de torres</strong><br>Aprende a jugar finales de torres con confianza y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-users fa-3x"></i>
+              <h5 class="card-title">Cupos: 6</h5>
+              <p class="card-text">Nuestro curso está limitado a 6 alumnos por grupo, con el objetivo de mejorar la calidad de la enseñanza y garantizar una mejor interacción entre el instructor y los estudiantes.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -241,10 +360,29 @@
             <tbody>
               <tr>
                 <td>Clase 1</td>
-                <td>2023-03-03</td>
+                <td>2023-03-15</td>
                 <td>18:00 - 20:00</td>
               </tr>
-              <!-- Agrega más filas para otras clases -->
+              <tr>
+                <td>Clase 2</td>
+                <td>2023-03-17</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 3</td>
+                <td>2023-03-22</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 4</td>
+                <td>2023-03-24</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 5</td>
+                <td>2023-03-29</td>
+                <td>18:00 - 20:00</td>
+              </tr>
             </tbody>
           </table>
           <div class="d-flex justify-content-center mt-3">
@@ -258,17 +396,64 @@
       <div class="row">
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-user-graduate fa-3x"></i>
+              <h5 class="card-title">Dirigido a:</h5>
+              <p class="card-text">Jugadores con un nivel avanzado, con un mínimo de <strong>1800 Elo en Chess.com <img src="img/logo-chess.png" alt="Chess.com" width="15" height="20"></strong> o <strong>1900 Elo Lichess.org <img src="img/logo-lichess.png" alt="Lichess" width="30" height="30"></strong>.</p>
+              <a href="https://docs.google.com/forms/d/your_form_link" target="_blank">
+                <button type="button" class="btn btn-primary">Diligenciar Formulario</button>
+              </a>
+              <br>
+              <br>
+              <a href="https://wa.me/your_whatsapp_number" target="_blank">
+                <button type="button" class="btn btn-success">Enviar Resultados por WhatsApp</button>
+              </a>
+            </div>
           </div>
         </div>
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-list-alt fa-3x"></i>
+              <h5 class="card-title">Temario:</h5>
+              <table class="table table-sm table-dark table-bordered temario-table" style="text-align: left; border-width: 2px; border-collapse: separate; border-spacing: 0 10px;">
+                <colgroup>
+                  <col style="width: 15%;">
+                  <col style="width: 85%;">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row"><strong>Clase 1:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende la Defensa Grünfeld</strong><br>Domina las sutilezas de la Defensa Grünfeld y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 2:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Domina la Defensa Nimzo-India</strong><br>Aprende a jugar la Defensa Nimzo-India con confianza y aprovecha al máximo tu posición con variadas estrategias y tácticas.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 3:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Mejora tu juego en finales complejos</strong><br>Explora las diferentes estrategias y tácticas en finales complejos para mejorar tu juego y tomar mejores decisiones.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 4:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende a jugar finales de alfiles</strong><br>Aprende a jugar finales de alfiles con confianza y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 5:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende a jugar finales de caballos</strong><br>Aprende a jugar finales de caballos con confianza y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-users fa-3x"></i>
+              <h5 class="card-title">Cupos: 6</h5>
+              <p class="card-text">Nuestro curso está limitado a 6 alumnos por grupo, con el objetivo de mejorar la calidad de la enseñanza y garantizar una mejor interacción entre el instructor y los estudiantes.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -295,10 +480,29 @@
             <tbody>
               <tr>
                 <td>Clase 1</td>
-                <td>2023-03-05</td>
+                <td>2023-04-01</td>
                 <td>18:00 - 20:00</td>
               </tr>
-              <!-- Agrega más filas para otras clases -->
+              <tr>
+                <td>Clase 2</td>
+                <td>2023-04-06</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 3</td>
+                <td>2023-04-08</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 4</td>
+                <td>2023-04-13</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 5</td>
+                <td>2023-04-15</td>
+                <td>18:00 - 20:00</td>
+              </tr>
             </tbody>
           </table>
           <div class="d-flex justify-content-center mt-3">
@@ -312,17 +516,64 @@
       <div class="row">
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-user-graduate fa-3x"></i>
+              <h5 class="card-title">Dirigido a:</h5>
+              <p class="card-text">Jugadores con un nivel de maestro, con un mínimo de <strong>2200 Elo en Chess.com <img src="img/logo-chess.png" alt="Chess.com" width="15" height="20"></strong> o <strong>2300 Elo Lichess.org <img src="img/logo-lichess.png" alt="Lichess" width="30" height="30"></strong>.</p>
+              <a href="https://docs.google.com/forms/d/your_form_link" target="_blank">
+                <button type="button" class="btn btn-primary">Diligenciar Formulario</button>
+              </a>
+              <br>
+              <br>
+              <a href="https://wa.me/your_whatsapp_number" target="_blank">
+                <button type="button" class="btn btn-success">Enviar Resultados por WhatsApp</button>
+              </a>
+            </div>
           </div>
         </div>
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-list-alt fa-3x"></i>
+              <h5 class="card-title">Temario:</h5>
+              <table class="table table-sm table-dark table-bordered temario-table" style="text-align: left; border-width: 2px; border-collapse: separate; border-spacing: 0 10px;">
+                <colgroup>
+                  <col style="width: 15%;">
+                  <col style="width: 85%;">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row"><strong>Clase 1:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende la Defensa Siciliana Najdorf</strong><br>Domina las sutilezas de la Defensa Siciliana Najdorf y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 2:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Domina la Apertura Española</strong><br>Aprende a jugar la Apertura Española con confianza y aprovecha al máximo tu posición con variadas estrategias y tácticas.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 3:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Mejora tu juego en finales de damas</strong><br>Explora las diferentes estrategias y tácticas en finales de damas para mejorar tu juego y tomar mejores decisiones.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 4:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende a jugar finales de torres y alfil</strong><br>Aprende a jugar finales de torres y alfil con confianza y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><strong>Clase 5:</strong></th>
+                    <td style="font-size: 18px; line-height: 1.5;"><strong>Aprende a jugar finales de torres y caballo</strong><br>Aprende a jugar finales de torres y caballo con confianza y mejora tu juego con valiosas ideas y estrategias.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="card-container text-center mb-4">
           <div class="card card-course">
-            ...
+            <div class="card-body">
+              <i class="fas fa-users fa-3x"></i>
+              <h5 class="card-title">Cupos: 6</h5>
+              <p class="card-text">Nuestro curso está limitado a 6 alumnos por grupo, con el objetivo de mejorar la calidad de la enseñanza y garantizar una mejor interacción entre el instructor y los estudiantes.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -349,10 +600,29 @@
             <tbody>
               <tr>
                 <td>Clase 1</td>
-                <td>2023-03-07</td>
+                <td>2023-04-20</td>
                 <td>18:00 - 20:00</td>
               </tr>
-              <!-- Agrega más filas para otras clases -->
+              <tr>
+                <td>Clase 2</td>
+                <td>2023-04-22</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 3</td>
+                <td>2023-04-27</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 4</td>
+                <td>2023-04-29</td>
+                <td>18:00 - 20:00</td>
+              </tr>
+              <tr>
+                <td>Clase 5</td>
+                <td>2023-05-04</td>
+                <td>18:00 - 20:00</td>
+              </tr>
             </tbody>
           </table>
           <div class="d-flex justify-content-center mt-3">
@@ -363,45 +633,41 @@
     </div>
   </div>
 </div>
+</div>
+</section>
 
-
-<section id="instructor">
+<section id="instructor" class="py-5">
   <div class="container">
-    <h2 class="section-title">Conoce a nuestro instructor</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="instructor-img-container">
-          <img src="img/foto1.jpg" alt="Instructor" class="img-fluid instructor-img">
+    <div class="row justify-content-center">
+      <div class="col-md-8 mx-auto">
+        <div class="instructor-container text-center py-5 px-4">
+          <h2 class="section-title">Conoce a nuestro instructor</h2>
+          <div class="instructor-img-container mb-4">
+            <img src="img/foto1.jpg" alt="Instructor" class="img-fluid instructor-img">
+          </div>
+          <h3 class="instructor-name">Jose Miguel Echeverri</h3>
+          <p class="intro text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero...</p>
+          <div class="info-box">
+            <i class="fas fa-chess-rook"></i>
+            <h4>Experiencia como entrenador</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
+          </div>
+          <div class="info-box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h4>Estilo de enseñanza</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
+          </div>
+          <div class="info-box">
+            <i class="fas fa-trophy"></i>
+            <h4>Logros y certificaciones</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
+          </div>
+          <a href="#" class="btn btn-primary">Inscribirse ahora</a>
         </div>
-      </div>
-      <div class="col-md-8">
-        <h3 class="instructor-name">Jose Miguel Echeverri</h3>
-        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero...</p>
-        <div class="info-box">
-          <i class="fas fa-chess-rook"></i>
-          <h4>Experiencia como entrenador</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
-        </div>
-        <div class="info-box">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <h4>Estilo de enseñanza</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
-        </div>
-        <div class="info-box">
-          <i class="fas fa-trophy"></i>
-          <h4>Logros y certificaciones</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
-        </div>
-        <div class="testimonials">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero..." <strong>- Juan Pérez</strong></p>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero..." <strong>- María López</strong></p>
-        </div>
-        <a href="#" class="btn btn-primary">Inscribirse ahora</a>
       </div>
     </div>
   </div>
 </section>
-
 
 
   <section id="testimonios" class="container mt-5 p-4 animate__animated animate__fadeInUp">
