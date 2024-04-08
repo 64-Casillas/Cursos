@@ -474,7 +474,7 @@ footer p {
 }
 
 .instructor-container {
-  background-color: #fff;
+  background-color: #343a40;
   border-radius: 10px; /* Ajusta el valor según tus necesidades */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); /* Ajusta los valores según tus necesidades */
   padding-left: 15px;
@@ -482,12 +482,12 @@ footer p {
 }
 
 #instructor .section-title {
-  color: #343a40;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
 #instructor .intro {
-  color: #6c757d;
+  color: #f8fafb;
   margin-bottom: 30px;
 }
 
@@ -582,7 +582,6 @@ footer p {
   }
 }
 
-
 #faq {
   background-color: #343a40;
   padding: 60px 0;
@@ -614,3 +613,47 @@ footer p {
   color: #e9ecef;
 }
 
+#curso-menu .nav-link::after {
+  content: attr(data-fecha);
+  display: block;
+  font-size: 16px;
+  color: #000000; /* Color de texto para fondos oscuros */
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.75); /* Sombra suave para mejorar la legibilidad en fondos claros */
+  -webkit-text-stroke: 1px #060606; /* Contorno blanco para el texto */
+}
+
+.certifications-box {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.certifications-box h4 {
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.certifications-list {
+  margin-left: 0; /* Elimina el margen a la izquierda */
+  padding-left: 1.5rem; /* Agrega un relleno a la izquierda para mantener el espacio con el ícono */
+}
+
+.certifications-list li {
+  color: #343a40; /* Cambia el color de fuente a un tono más oscuro */
+  margin-bottom: 1rem; /* Aumenta el margen inferior para separar los renglones */
+  display: flex; /* Aplica un contenedor flexible para alinear el ícono y el texto */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1); /* Agrega sombra a cada renglón */
+  padding: 0.5rem 0; /* Agrega un poco de relleno vertical para mejorar la separación */
+}
+
+.certifications-list li i {
+  margin-right: 1rem; /* Aumenta el margen derecho para separar el ícono del texto */
+  width: 1.25rem;
+  text-align: center;
+  color: #343a40; /* Cambia el color de fuente a un tono más oscuro */
+}
+.text-muted {
+  color: #ffffff !important;
+}
