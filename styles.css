@@ -705,3 +705,119 @@ footer p {
   margin-right: 5px;
   font-size: 1rem;
   }
+
+
+  .custom-card {
+    background-color: #343a40;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem; /* Agrega separación vertical entre las tarjetas */
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.25rem);
+  }
+  
+  .custom-card h5 {
+    color: #e9ecef;
+  }
+  
+  .custom-card p {
+    color: #ced4da;
+  }
+  
+  .custom-card i {
+    color: #f0ad4e;
+  }
+  
+  .custom-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-card ul li::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #f0ad4e;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .custom-card ul li {
+    display: flex;
+    align-items: center;
+    color: #ced4da;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .custom-card ul li:hover {
+    background-color: #495057;
+  }
+  
+
+  /* Estilos específicos para las secciones "Metodología" y "Grupos" */
+.custom-card.metodologia,
+.custom-card.grupos {
+  background-color: #212529;
+  border: 1px solid #495057;
+}
+
+.custom-card.metodologia:hover,
+.custom-card.grupos:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.custom-card.metodologia h5,
+.custom-card.grupos h5 {
+  color: #f0ad4e;
+}
+
+.custom-card.metodologia p,
+.custom-card.grupos p {
+  color: #e9ecef;
+}
+
+/* Estilos específicos para la sección "Objetivos del Curso" */
+.custom-card.objetivos {
+  background-color: #212529;
+  border: 1px solid #495057;
+}
+
+.custom-card.objetivos:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.custom-card.objetivos h5 {
+  color: #f0ad4e;
+}
+
+.custom-card.objetivos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-card.objetivos ul li {
+  display: flex;
+  align-items: center;
+  color: #e9ecef;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.custom-card.objetivos ul li:hover {
+  color: #f0ad4e;
+}
+
+.custom-card.objetivos ul li i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
