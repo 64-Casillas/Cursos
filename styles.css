@@ -821,3 +821,21 @@ footer p {
   font-size: 1.2rem;
 }
 
+@media (max-width: 767px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+  .table thead th {
+    font-size: 14px;
+  }
+  .table tbody td {
+    font-size: 13px;
+  }
+  .table tbody td a {
+    font-size: 12px;
+  }
+  .table {
+    transform: scale(0.8);
+  }
+}
+
