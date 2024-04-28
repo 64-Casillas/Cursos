@@ -9,7 +9,7 @@ body {
     background-image: url('https://source.unsplash.com/1600x900/?chess');
     background-size: cover;
     background-position: center;
-    height: 70vh; /* Ajusta el tamaño de la sección encabezado */
+    height: 90vh; /* Ajusta el tamaño de la sección encabezado */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,52 +171,61 @@ body {
     color: #6c757d;
 }
 
-/* Sección Precios */
 #precios {
-    padding: 60px 0;
-    background-color: #343A40;
-  }
+  padding: 60px 0;
+  background-color: #343A40;
+}
 
-  #precios h2 {
-    color: #e9ecef;
-  }
+#precios h2 {
+  color: #e9ecef;
+}
 
-  #precios .card-price {
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+#precios .card-price {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+}
 
-  #precios .card-price i {
-    color: #6c757d;
-  }
+#precios .card-price i {
+  color: #6c757d;
+}
 
-  #precios .card-price h4 {
-    color: #343a40;
-  }
+#precios .card-price h4 {
+  color: #343a40;
+}
 
-  #precios .card-price p {
-    color: #6c757d;
-  }
+#precios .card-price p {
+  color: #6c757d;
+}
 
-  #precios .card-price small {
-    color: #000000;
-  }
+#precios .card-price small {
+  color: #000000;
+}
 
-  #precios .card-price h5 {
-    color: #f0ad4e;
-  }
+#precios .card-price h5 {
+  color: #f0ad4e;
+}
 
-  #precios .card-price .btn-primary {
-    background-color: #f0ad4e;
-    border-color: #f0ad4e;
-  }
+#precios .card-price .btn-primary {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
 
-  #precios .card-price .btn-primary:hover {
-    background-color: #d99b47;
-    border-color: #d99b47;
-  }
+#precios .card-price .btn-primary:hover {
+  background-color: #d99b47;
+  border-color: #d99b47;
+}
+
+#precios .note-container {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
   /* Añade media queries para mejorar el diseño responsivo */
   @media (max-width: 768px) {
@@ -609,6 +618,52 @@ footer p {
   color: #212529;
 }
 
+/* Herramientas de utilidad */
+#herramientas {
+  background-color: #2c3e50;
+  padding: 30px 0;
+}
+
+#herramientas h2 {
+  color: #fff;
+}
+
+#herramientas .herramienta {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 0 15px;
+}
+
+#herramientas .herramienta:hover {
+  transform: scale(1.05);
+}
+
+#herramientas .herramienta i {
+  color: #2c3e50;
+}
+
+#herramientas .herramienta h4 {
+  color: #343a40;
+}
+
+#herramientas .herramienta p {
+  color: #6c757d;
+}
+
+#herramientas .herramienta .btn-outline-primary {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+#herramientas .herramienta .btn-outline-primary:hover {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
+
 #gallery {
   background-color: #495057;
   padding: 60px 0;
@@ -837,5 +892,21 @@ footer p {
   .table {
     transform: scale(0.8);
   }
+}
+
+.custom-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 
