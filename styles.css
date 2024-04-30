@@ -936,3 +936,12 @@ footer p {
   border-color: #0062cc;
 }
 
+#cursos h2 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+#cursos small {
+  font-size: 18px;
+  line-height: 1.5;
+}
